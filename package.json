@@ -1,0 +1,34 @@
+{
+  "name": "koa-params-validator",
+  "version": "0.0.1",
+  "description": "Koa参数校验插件",
+  "main": "index.js",
+  "module": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "koa",
+    "koa middleware",
+    "validator",
+    "validate",
+    "request",
+    "context",
+    "params"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peakchen90/koa-params-validator"
+  },
+  "bugs": {
+    "url": "https://github.com/peakchen90/koa-params-validator/issues"
+  },
+  "author": "peakchen90 <1558267774@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^23.5.0"
+  },
+  "dependencies": {
+    "easy-object-validator": "^1.0.0"
+  }
+}
