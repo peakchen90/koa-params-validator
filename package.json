@@ -1,7 +1,7 @@
 {
   "name": "koa-params-validator",
-  "version": "0.0.1",
-  "description": "Koa参数校验插件",
+  "version": "0.0.2",
+  "description": "Koa参数校验中间件",
   "main": "index.js",
   "module": "index.js",
   "scripts": {
@@ -9,12 +9,12 @@
   },
   "keywords": [
     "koa",
+    "koa2",
     "koa middleware",
     "validator",
     "validate",
     "request",
-    "context",
-    "params"
+    "parameter"
   ],
   "repository": {
     "type": "git",
@@ -29,6 +29,10 @@
     "jest": "^23.5.0"
   },
   "dependencies": {
-    "easy-object-validator": "^1.0.0"
+    "easy-object-validator": "^1.0.2"
+  },
+  "jest": {
+    "coverageDirectory": "./test/coverage/",
+    "collectCoverage": true
   }
 }
