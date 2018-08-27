@@ -4,10 +4,10 @@ const objectValidator = require('easy-object-validator');
 /**
  * 请求参数校验
  * @param {Object} options 校验规则
- * @param {Object} [mixinContext] 校验失败时，将合并到ctx
+ * @param {Object} [invalidMixinContext] 校验失败时，将合并到ctx
  * @returns {Function} Koa中间件
  */
-function validator(options, mixinContext) {
+function validator(options, invalidMixinContext) {
   return async (ctx, next) => {
     options = options || {};
     const target = ctx.request;
@@ -15,13 +15,13 @@ function validator(options, mixinContext) {
     if (isValid) {
       await next();
     } else {
-      if (Validate.type(mixinContext) !== 'object') {
-        mixinContext = {}
+      if (Validate.type(invalidMixinContext) !== 'object') {
+        invalidMixinContext = {}
       }
       Object.assign(ctx, {
         status: 500,
         message: 'The parameter is invalid'
-      }, mixinContext);
+      }, invalidMixinContext);
     }
   }
 }

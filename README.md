@@ -33,9 +33,9 @@ app.use(validator({
 ## API
 > 校验规则的API与 [easy-object-validator](https://github.com/peakchen90/easy-object-validator) 完全一致，请直接参考其用法
 
-### **`validator`: Function(options, mixinContext)**
-  - {Object} options 校验规则，请参考 easy-object-validator
-  - {Object} mixinContext [可选] 混合到Koa的context对象上，默认 status: 500, 默认 message: 'The parameter is invalid'
+### **`validator`: Function(options, invalidMixinContext)**
+  - {Object} options 校验规则，请参考 [easy-object-validator](https://github.com/peakchen90/easy-object-validator)
+  - {Object} invalidMixinContext [可选] 未通过校验时将这个对象混合到Koa的context对象上，默认 status: 500, 默认 message: 'The parameter is invalid'
   - 返回一个Koa中间件
 
 
