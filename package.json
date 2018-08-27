@@ -1,7 +1,7 @@
 {
   "name": "koa-params-validator",
   "version": "0.0.2",
-  "description": "Koa参数校验中间件",
+  "description": "Koa请求参数校验中间件",
   "main": "index.js",
   "module": "index.js",
   "scripts": {
