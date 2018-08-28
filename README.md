@@ -24,10 +24,25 @@ app.use(validator({
     keyword: validator.string().isRequire()
   },
   body: {
-    data:validator.arrayOf(validator.object())
+    data: validator.arrayOf(validator.object())
   }
 }))
 
+// 在路由中使用
+route.post('/login', validator({
+  body: {
+    username: validator.string().isRequire()
+    password: validator.string().isRequire()
+  }
+}, {
+  statsu: 200,
+  state:{
+    success: false,
+    data: '用户名或密码不能为空'
+  }
+}), (ctx) => {
+  // login...
+})
 ```
 
 ## API
