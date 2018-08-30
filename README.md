@@ -13,6 +13,10 @@ Koa2 请求参数校验中间件, 基于 [easy-object-validator](https://github.
 npm i -S koa-params-validator
 ```
 
+## 环境要求
+- Node >= 7.6
+- Koa >= 2.0
+
 ## 快速开始
 ```js
 const validator = require('koa-params-validator')
