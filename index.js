@@ -50,9 +50,11 @@ validator.boolean = objectValidator.boolean;
 validator.isRequire = objectValidator.isRequire;
 validator.test = objectValidator.test;
 validator.is = objectValidator.is;
+validator.equals = objectValidator.equals;
 validator.not = objectValidator.not;
 validator.arrayOf = objectValidator.arrayOf;
 validator.oneOf = objectValidator.oneOf;
+validator.enums = objectValidator.enums;
 validator.reset = objectValidator.reset;
 
 
